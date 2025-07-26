@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PLAYLIST4U</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="layoutt.css">
+  <script defer src="functions.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <audio id="audioPlayer"></audio>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+      <span class="heart"></span>
+      <span class="heart"></span>
+      <span class="heart"></span>
+      <span class="heart"></span>
+      <span class="heart"></span>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header-bar">
+      <span class="cd"></span>
+      SONGS I PLAY WHEN I THINK ABOUT YOU! <span> ˚ʚ♡ɞ˚</span>
+      <span class="cd"></span>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-container">
+      <!-- MUSIC BOX -->
+      <div id="musicbox">
+        <!-- Song Info - Hidden initially -->
+        <div id="songInfo">
+          <h3 id="songTitle">"Song Title"</h3>
+          <p id="artist">Unknown Artist</p>
+        </div>
+
+        <!-- Album Cover -->
+        <img id="albumCover" src="bear.png" alt="Album Cover">
+
+        <!-- Progress -->
+        <div class="progress-bar">
+          <input type="range" class="slider" min="0" max="100" value="0">
+          <span class="time">0:00</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+          <button class="control-btn back-btn"></button>
+          <button class="control-btn play-btn"></button>
+          <button class="control-btn next-btn"></button>
+        </div>
+      </div>
+
+      <!-- LYRICS + VOLUME -->
+      <div id="lyricsContainer">
+        <div id="lyricsBox">
+          <span class="lyrics-header"> ♫ LYRICS...</span>
+          <div id="lyrics">
+            <br><br>lyrics loading...<br><br>lyrics loading...
+          </div>
+        </div>
+
+        <div id="volumeControl">
+          <label for="volumeSlider"> 𝄞volume </label>
+          <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.3">
+          <span id="volumeValue">100%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTNOTE -->
+  <footer>
+    <p id="footnote1">♡ made with love © Angel ♡</p>
+  </footer>
+</body>
+</html>
