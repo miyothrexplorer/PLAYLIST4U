@@ -247,11 +247,11 @@ opacity: 1;
 
 #lyrics {
   transition: transform 0.3s ease-out;
-  white-space: pre-wrap; /* preserve line breaks */
+  white-space: pre-wrap; 
   line-height: 1.2em;
   position: relative;
   overflow-y: auto;
-  max-height: 370px; /* or however tall you want */
+  max-height: 370px; 
   padding: 10px;
 }
 
@@ -261,7 +261,7 @@ opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
-  height: 15px; /* adjust height for stronger/softer fade */
+  height: 15px; 
   background: linear-gradient(to bottom, #fffaf0, rgba(255, 250, 240, 0));
   pointer-events: none;
   z-index: 1;
@@ -357,3 +357,4 @@ opacity: 1;
   margin: 40px 20px 0;
   margin-top: 5.3cm;
 }
+
